@@ -71,7 +71,7 @@ def main():
 	print("Found %i sequences" % len(selected_sequences))
 
 ## DVF proviruses
-	provirus_DVF = provirus[(~provirus['VS2'])]
+	provirus_DVF = provirus[(~provirus['DVF'])]
 	pro_selection2 = provirus_DVF['contig_id'].tolist()
 
 	pro_DVF = checkV_DVF+"/proviruses.fna"
